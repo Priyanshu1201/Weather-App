@@ -5,7 +5,7 @@ from tkinter import *
 
 def weather():
 	city = city_listbox.get()
-	url = "http://api.openweathermap.org/data/2.5/weather?q={}&appid=6feed0d455440d9fd99b9d181e8b3c29".format(city)
+	url = "http://api.openweathermap.org/data/2.5/weather?q={}&appid={enter your api id}".format(city)
 	res = requests.get(url)
 	# print(res)
 	output = json.loads(res.content)
